@@ -1,3 +1,4 @@
+
 # Employee Management System
 
 ## Description
@@ -42,3 +43,38 @@ Before running this project, you need to have the following installed on your sy
 
    ```bash
    git clone https://github.com/your-username/employee-management-system.git
+   ```
+
+2. Set up your MySQL database. Create a new database and import the schema for employee data. You can use the following SQL command to create a simple table:
+
+   ```sql
+   CREATE TABLE employees (
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(100),
+       age INT,
+       email VARCHAR(100),
+       salary DECIMAL(10, 2)
+   );
+   ```
+
+3. Configure the database connection in the project by updating the **database configuration file** with your MySQL credentials (username, password, etc.).
+
+4. Build the project using your IDE (like Eclipse or IntelliJ IDEA).
+
+5. Deploy the project on **Apache Tomcat** server.
+
+6. Access the project in your browser at:
+
+   ```bash
+   http://localhost:8080/employee-management-system
+   ```
+
+### Running the Application
+
+Once the application is up and running, navigate to the **Employee List** page to view the employees. You can:
+
+- Add a new employee
+- Edit or delete an existing employee
+- View employee details in a table format
+
+
